@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Maulik Jain Portfolio</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+        <style>
+            a:hover { color: #8776ae !important;
+                    text-decoration: underline !important;}
+
+            .hero {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                gap: 20px;
+            }
+
+            .profile-pic {
+                width: 150px;
+                height: 150px;
+                border-radius: 50%;
+                object-fit: cover;
+                flex-shrink: 0;
+            }
+
+            .tagline {
+                color: #8776ae;
+                margin-top: 0;
+            }
+
+            h2 {
+                font-size: rem;
+                border-bottom: 2px solid #333; /* underline effect using a border */
+                padding-bottom: 4px;
+                margin-top: 40px;              /* space above each section */
+            }
+
+            h1 {
+                font-size: 2rem;       /* 2× the base font size */
+                margin-bottom: 4px;    /* small gap below the name */
+            }
+            
+            .nav {
+                display: flex;
+                gap: 16px;
+                margin-bottom: 30px;
+            }
+
+            .nav a {
+                color: #8776ae;
+                text-decoration: none;
+            }
+            .container {
+                max-width: 800px;
+                margin: 0 auto;
+                padding: 40px 20px;
+            }
+            .card {
+            
+            border: 1px solid #ccc;  /* thin grey outline */
+            border-radius: 6px;
+            padding: 16px;
+            margin-bottom: 12px;
+            }
+
+            .card h3 {
+            margin: 0 0 6px 0; /* top right bottom left shorthand */
+            }
+
+            .card p {
+            margin: 0 0 10px 0;
+            
+            font-size: 0.9rem;
+            }
+
+
+
+
+
+            #social-bar {
+            position: fixed;
+            bottom: 24px;
+            right: 24px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            z-index: 999;
+            }
+
+            #social-bar a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            background: #1a1a1a;
+            color: #fff;
+            font-size: 18px;
+            text-decoration: none;
+            transition: background 0.2s, transform 0.2s;
+            }
+
+            #social-bar a:hover {
+            transform: scale(1.1);
+            text-decoration: none;
+            }
+
+            #social-bar a.github:hover   { background: #333; }
+            #social-bar a.linkedin:hover { background: #0077b5; }
+            #social-bar a.email:hover    { background: #d44638; }
+            #social-bar a.instagram:hover { background: #bf5ade;}
+        </style>
+    </head>
+
+    <body class = "container" style="background-color: black; color: white; font-family: 'Courier New', Courier, monospace;">
+        
+        <div class="nav">
+            <a href = "#about">About</a>
+            <a href = "#contact">Contacts</a>
+            <a href = "#projects">Projects</a>
+            
+
+        </div>
+
+        <img src="profile.jpg" width="120" height="120" alt="Profile picture" class="profile-pic" />
+        <!-- header -->
+         <h1>Maulik Jain</h1>
+         <p class="tagline">Mechanical Engineering · ML-DL · CAD · Ansys</p>
+
+         <!-- about -->
+          <h2 id="about">About Me</h2>
+          <p>I'm a Mechanical Engineering student at Delhi Technological University, currently Airframes Technician at <a href="https://uasdtu.com/" style="text-decoration: none; color: inherit;"><strong>UAS-DTU</strong></a>, DTU's official aerial systems team. I work at the intersection of aerodynamics, structural engineering, and autonomous systems — designing and building the hardware that lets our machines fly and survive in the real world.</p>
+
+          <p>At UAS-DTU, I built a fixed-wing RC aircraft from scratch: full aerodynamic analysis in XFLR5, structural validation through ANSYS FEA, and hands-on flight testing where I diagnosed and resolved pitch instability by iterating on the centre-of-gravity configuration. I also design rover chassis, sensor-mounting plates, and a 3-axis robotic arm in SolidWorks, while contributing to our FAST-LIO2 and VINS-Fusion stack running on Pixhawk Cube Orange with RTK-GPS. Our team is currently preparing for the <a href="https://www.darpa.mil/research/challenges/darpa-triage-challenge" style="text-decoration: none; color: inherit;"><strong>DARPA Triage Challenge</strong></a> — autonomous casualty search and triage in GPS-degraded, communication-constrained environments.</p>
+
+          <p>Beyond mechanical design, I'm building a deep learning pipeline for non-contact vital sign detection at a 2-metre standoff — combining my hardware intuition with applied ML to solve real diagnostic problems. I've also completed Prof. A.K. Ghosh's aircraft stability and control course at IIT Kanpur, which gave me a rigorous foundation in flight dynamics that directly informs my design work.</p>
+
+          <p>My engineering toolkit spans <strong> SolidWorks, ANSYS, XFLR5, Python, ROS, PyTorch, and Mission Planner/PX4</strong>. I'm drawn to problems that sit on the boundary between the physical and the intelligent — where structural integrity, aerodynamic behaviour, and autonomous decision-making have to work together under real-world constraints.</p>
+
+          <p>Outside technical work, I enjoy analysing aircraft configurations, following the latest in drone autonomy research, and finding ways to make things lighter, stronger, and faster.</p>
+        
+
+
+        <!-- projects -->
+         <h2 id="projects">Projects</h2>
+
+         <div class="card">
+            <h3>Fixed Wing RC Plane</h3>
+            <p>Built a fixed-wing RC aircraft from scratch — aerodynamic design in XFLR5, structural validation through ANSYS FEA</p>
+            <!-- target="_blank" opens link in a new tab -->
+            <a href="https://github.com/maulik0jain" target="_blank" style="text-decoration: none; color: #8776ae;">View on GitHub →</a>
+         </div>
+         <div class="card">
+            <h3>"Aurelius" - The Darpa Phase 3 Rover </h3>
+            <p>Designed a rover chassis, sensor-mounting plate, and 3-axis robotic arm in SolidWorks, integrating mechanical structure with autonomous systems for field deployment.</p>
+            <!-- target="_blank" opens link in a new tab -->
+            <a href="https://github.com/maulik0jain" target="_blank" style="text-decoration: none; color: #8776ae;">View on GitHub →</a>
+         </div>
+
+
+
+
+
+
+        <!-- contact -->
+         <h2 id="contact">Contact</h2>
+         <p>Email : <a href="maulik0jain@gmail.com" style="text-decoration: none; color: inherit;">maulik0jain@gmail.com</a></p>
+         <p>Phone : +91 8595639816</p>
+         <p>Linkdin : <a href="https://www.linkedin.com/in/maulikjain10/" style="text-decoration: none; color: inherit;">maulikjain10</a></p>
+         <p>Github : <a href="https://github.com/maulik0jain" style="text-decoration: none; color: inherit;">maulik0jain.github.io</a></p>
+
+
+         <div id="social-bar">
+         <a href="https://github.com/maulik0jain" class="github" target="_blank" title="GitHub">
+         <i class="fab fa-github"></i>
+         </a>
+         <a href="https://www.linkedin.com/in/maulikjain10/" class="linkedin" target="_blank" title="LinkedIn">
+         <i class="fab fa-linkedin-in"></i>
+         </a>
+         <a href="maulik0jain@email.com" class="email" title="Email">
+         <i class="fas fa-envelope"></i>
+         </a>
+         </a>
+         <a href="maulik0jain@email.com" class="instagram" title="Instagram">
+         <i class="fab fa-instagram"></i>
+         </a>
+
+         </div>
+    </body>
+
+
+</html>
